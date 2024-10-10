@@ -1,3 +1,4 @@
+import { Footer } from '@/components/Footer';
 import { Header } from '@/components/home/Header';
 import { Hero } from '@/components/home/Hero';
 import { Quotes } from '@/components/home/Quotes';
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Quotes />
       <Skills />
+      <Footer />
     </main>
   );
 }
