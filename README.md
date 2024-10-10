@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Idnasirasira.com
 
-## Getting Started
+This project is my personal website.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Introduction](#introduction)
+- [Technologies Used](#technologies-used)
+- [Setup and Installation](#setup-and-installation)
+- [Features](#features)
+- [License](#license)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Introduction
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Welcome to my personal website! This site showcases my work, skills, and interests as a Full Stack Developer based in Jakarta, Indonesia. Feel free to explore and get in touch with me.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technologies Used
 
-## Learn More
+- **Next.js**: A React framework for production.
+- **Tailwind CSS**: A utility-first CSS framework.
+- **TypeScript**: A strongly typed programming language that builds on JavaScript.
+- **Radix UI**: A set of accessible, unstyled components for building high-quality design systems and web apps.
+- **Matomo**: An open-source web analytics platform.
 
-To learn more about Next.js, take a look at the following resources:
+## Setup and Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To set up and run this project locally, follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone the repository:**
 
-## Deploy on Vercel
+   ```sh
+   git clone https://github.com/yourusername/idnasirasira.com.git
+   cd idnasirasira.com
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Install dependencies:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```sh
+   npm install
+   ```
+
+3. **Run the development server:**
+
+   ```sh
+   npm run dev
+   ```
+
+4. **Build the project:**
+
+   ```sh
+   npm run build
+   ```
+
+5. **Start the production server:**
+   ```sh
+   npm start
+   ```
+
+## Features
+
+- **Responsive Design**: The website is fully responsive and works on all devices.
+- **Dark Mode**: Supports dark mode for a better viewing experience in low-light environments.
+- **SEO Optimized**: The website is optimized for search engines.
+- **Analytics**: Integrated with Matomo for tracking and analytics.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
