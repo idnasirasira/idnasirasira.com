@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export function Hero() {
   return (
@@ -29,7 +30,11 @@ export function Hero() {
             Technology Enthusiast always looking for something new to learn
           </p>
           <div className="flex justify-center">
-            <Button className="mr-4">Download CV</Button>
+            <Button className="mr-4">
+              <Link target="blank" href="/CV - Aris Arisandi.pdf">
+                Download CV
+              </Link>
+            </Button>
             <Button variant={'secondary'}>Contact Me</Button>
           </div>
         </div>
