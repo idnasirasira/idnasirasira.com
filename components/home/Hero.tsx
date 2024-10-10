@@ -12,6 +12,7 @@ export function Hero() {
           src="/images/me.webp"
           width={208}
           height={208}
+          priority={false}
         />
         <div className="text-center lg:w-2/3 w-full">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 dark:text-gray-200">
@@ -29,12 +30,10 @@ export function Hero() {
             development especially at web backend developer. I am energetic
             Technology Enthusiast always looking for something new to learn
           </p>
-          <div className="flex justify-center">
-            <Button className="mr-4">
-              <Link target="blank" href="/CV - Aris Arisandi.pdf">
-                Download CV
-              </Link>
-            </Button>
+          <div className="flex gap-4 justify-center">
+            <Link target="blank" href="/CV - Aris Arisandi.pdf">
+              <Button>Download CV</Button>
+            </Link>
             <Button variant={'secondary'}>Contact Me</Button>
           </div>
         </div>

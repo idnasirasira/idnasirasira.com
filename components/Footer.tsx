@@ -13,11 +13,11 @@ export function Footer() {
             IDNASIRASIRA
           </span>
         </Link>
-        <p className="text-sm text-gray-500 dark:text-gray-200 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+        <p className="text-sm text-gray-700 dark:text-gray-200 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
           © 2022 Idnasirasira —
           <a
             href="https://github.com/idnasirasira"
-            className="text-gray-600 dark:text-gray-200 ml-1"
+            className="text-gray-700 dark:text-gray-200 ml-1"
             rel="noopener noreferrer"
             target="_blank"
           >
