@@ -11,22 +11,21 @@ interface Skill {
 }
 
 interface SkillItemProps {
-  index: number;
   skill: Skill;
 }
 
-export function SkillItem({ index, skill }: SkillItemProps) {
+export function SkillItem({ skill, ...props }: SkillItemProps) {
   const [isVisible, setIsVisible] = useState(false);
 
   return (
     <motion.div
-      key={index}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       whileHover={{ scale: 1.1, translateY: -5 }}
       onHoverStart={() => setIsVisible(true)}
       onHoverEnd={() => setIsVisible(false)}
+      {...props}
     >
       <Badge
         variant="secondary"

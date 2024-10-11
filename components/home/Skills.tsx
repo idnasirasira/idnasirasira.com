@@ -69,7 +69,7 @@ export function Skills() {
         </div>
         <div className="flex flex-wrap gap-4 justify-center items-center">
           {skills.map((skill, index) => (
-            <SkillItem index={index} skill={skill} />
+            <SkillItem key={index} skill={skill} />
           ))}
         </div>
       </div>
