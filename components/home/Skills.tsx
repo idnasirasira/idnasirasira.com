@@ -57,8 +57,8 @@ export function Skills() {
               <div className="absolute left-0 bottom-full mb-2 bg-white text-white text-xs font-medium px-2 py-1 opacity transition-opacity opacity-0 duration-300 pointer-events-none group-hover:opacity-100">
                 <Badge className="mb-2">Frameworks I have used:</Badge>
                 <div className="flex flex-wrap w-[200px]">
-                  {skill.item.map((item, index) => (
-                    <Badge variant="secondary" className="m-1 inline">
+                  {skill.item.map((item, idx) => (
+                    <Badge key={idx} variant="secondary" className="m-1 inline">
                       {item}
                     </Badge>
                   ))}
