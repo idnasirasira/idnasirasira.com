@@ -1,11 +1,37 @@
+import { Badge } from '../ui/badge';
+
 export function Skills() {
   const skills = [
-    { name: 'PHP', level: 'Intermediate', percentage: 90 },
-    { name: 'JavaScript', level: 'Expert', percentage: 90 },
-    { name: 'TypeScript', level: 'Advanced', percentage: 80 },
-    { name: 'Python', level: 'Advanced', percentage: 80 },
-    { name: 'Node.js', level: 'Intermediate', percentage: 70 },
-    { name: 'CSS/SCSS', level: 'Advanced', percentage: 80 },
+    {
+      name: 'PHP',
+      description:
+        'PHP is a popular general-purpose scripting language that is especially suited to web development.',
+      item: ['Native', 'Laravel', 'Codeigniter', 'Wordpress', 'Symfony'],
+    },
+    {
+      name: 'JavaScript',
+      description:
+        'JavaScript is a programming language that adds interactivity to your website.',
+      item: ['Typescript', 'Node', 'React', 'Vue', 'Express.js'],
+    },
+    {
+      name: 'Python',
+      description:
+        'Python is a programming language that lets you work quickly and integrate systems more effectively.',
+      item: ['Django', 'Flask', 'FastAPI'],
+    },
+    {
+      name: 'HTML & CSS',
+      description:
+        'HTML and CSS are the basic building blocks of web development.',
+      item: ['SCSS', 'Tailwind', 'Bootstrap'],
+    },
+    {
+      name: 'GoLang',
+      description:
+        'Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.',
+      item: ['Gin', 'Echo', 'Fiber'],
+    },
   ];
 
   return (
@@ -19,17 +45,26 @@ export function Skills() {
             Skills
           </h1>
         </div>
-        <div className="md:w-6/12 mx-auto flex flex-wrap gap-4 justify-center items-center">
+        <div className="flex flex-wrap gap-4 justify-center items-center">
           {skills.map((skill, index) => (
-            <span
+            <Badge
               key={index}
-              className="relative inline-block bg-gray-200 text-gray-800 text-sm font-semibold px-4 py-2 rounded-full cursor-pointer transition-all duration-300 hover:bg-blue-500 hover:text-white group"
+              variant="secondary"
+              className="relative inline-block text-sm font-semibold px-4 py-2 cursor-pointer transition-all duration-300 group hover:bg-blue-600 hover:text-white"
             >
-              {skill.name} - {skill.level}
-              <span className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 bg-blue-500 text-white text-xs font-medium px-2 py-1 rounded opacity transition-opacity opacity-0 duration-300 pointer-events-none group-hover:opacity-100">
-                {skill.percentage}%
-              </span>
-            </span>
+              {skill.name}
+
+              <div className="absolute left-0 bottom-full mb-2 bg-white text-white text-xs font-medium px-2 py-1 opacity transition-opacity opacity-0 duration-300 pointer-events-none group-hover:opacity-100">
+                <Badge className="mb-2">Frameworks I have used:</Badge>
+                <div className="flex flex-wrap w-[200px]">
+                  {skill.item.map((item, index) => (
+                    <Badge variant="secondary" className="m-1 inline">
+                      {item}
+                    </Badge>
+                  ))}
+                </div>
+              </div>
+            </Badge>
           ))}
         </div>
       </div>
