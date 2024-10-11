@@ -1,4 +1,8 @@
+'use client';
+import { SkillItem } from '../custom/SkillItem';
+import { SkillPopup } from '../custom/SkillPopup';
 import { Badge } from '../ui/badge';
+import { AnimatePresence, motion } from 'framer-motion';
 
 export function Skills() {
   const skills = [
@@ -47,24 +51,7 @@ export function Skills() {
         </div>
         <div className="flex flex-wrap gap-4 justify-center items-center">
           {skills.map((skill, index) => (
-            <Badge
-              key={index}
-              variant="secondary"
-              className="relative inline-block text-sm font-semibold px-4 py-2 cursor-pointer transition-all duration-300 group hover:bg-blue-600 hover:text-white"
-            >
-              {skill.name}
-
-              <div className="absolute left-0 bottom-full mb-2 bg-white text-white text-xs font-medium px-2 py-1 opacity transition-opacity opacity-0 duration-300 pointer-events-none group-hover:opacity-100">
-                <Badge className="mb-2">Frameworks I have used:</Badge>
-                <div className="flex flex-wrap w-[200px]">
-                  {skill.item.map((item, idx) => (
-                    <Badge key={idx} variant="secondary" className="m-1 inline">
-                      {item}
-                    </Badge>
-                  ))}
-                </div>
-              </div>
-            </Badge>
+            <SkillItem index={index} skill={skill} />
           ))}
         </div>
       </div>
