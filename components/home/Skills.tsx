@@ -36,6 +36,24 @@ export function Skills() {
         'Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.',
       item: ['Gin', 'Echo', 'Fiber'],
     },
+    {
+      name: 'Databases',
+      description:
+        'A database is an organized collection of data, generally stored and accessed electronically from a computer system.',
+      item: ['MySQL', 'NoSQL', 'PostgreSQL', 'MongoDB', 'Firebase'],
+    },
+    {
+      name: 'DevOps',
+      description:
+        'DevOps is a set of practices that combines software development (Dev) and IT operations (Ops).',
+      item: [
+        'Docker',
+        'Kubernetes',
+        'Jenkins',
+        'Gitlab CI/CD',
+        'Github Actions',
+      ],
+    },
   ];
 
   return (
