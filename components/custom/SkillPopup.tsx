@@ -17,7 +17,7 @@ export function SkillPopup({ item }: SkillPopupProp) {
         transition={{ duration: 0.5, ease: 'backInOut' }}
         className="absolute left-0 bottom-full mb-2 bg-white dark:bg-slate-900 text-white text-xs font-medium px-2 py-1 duration-300 pointer-events-none"
       >
-        <Badge className="mb-2">Frameworks I have used:</Badge>
+        <Badge className="mb-2">Frameworks:</Badge>
         <div className="flex flex-wrap w-[200px]">
           {item.map((item, idx) => (
             <Badge key={idx} variant="secondary" className="m-1 inline">
