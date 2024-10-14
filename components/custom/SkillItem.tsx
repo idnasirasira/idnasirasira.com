@@ -25,6 +25,7 @@ export function SkillItem({ skill, ...props }: SkillItemProps) {
       whileHover={{ scale: 1.1, translateY: -5 }}
       onHoverStart={() => setIsVisible(true)}
       onHoverEnd={() => setIsVisible(false)}
+      onClick={() => setIsVisible(!isVisible)}
       {...props}
     >
       <Badge
