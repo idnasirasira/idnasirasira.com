@@ -23,7 +23,6 @@ export function SkillItem({ skill, ...props }: SkillItemProps) {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       whileHover={{ scale: 1.1, translateY: -5 }}
-      whileTap={{ scale: 1.1, translateY: -5 }}
       onHoverStart={() => setIsVisible(true)}
       onHoverEnd={() => setIsVisible(false)}
       onClick={() => setIsVisible(!isVisible)}

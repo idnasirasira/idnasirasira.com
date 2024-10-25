@@ -26,7 +26,6 @@ export function ExperineceItem({
         transition={{ duration: 1 }}
         whileTap={{ translateY: -10, translateX: 0 }}
         onClick={() => setIsVisible(!isVisible)}
-        onTap={() => setIsVisible(!isVisible)}
         className="relative md:w-4/12 hover:bg-slate-100 p-3 transition-colors rounded-md duration-300 cursor-pointer"
       >
         <h2 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
