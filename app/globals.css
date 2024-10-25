@@ -72,3 +72,7 @@
 .font-poppins {
   font-family: var(--font-poppins);
 }
+
+html {
+  scroll-behavior: smooth;
+}
